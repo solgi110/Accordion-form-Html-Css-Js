@@ -1,0 +1,72 @@
+body {
+  background-color: rgb(168, 160, 160);
+}
+
+.conti-first {
+
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 100px;
+  width: 400px;
+  font-size: 13px;
+
+}
+
+li {
+  list-style: none;
+}
+
+.question-box {
+  background-color: #ccc;
+  cursor: pointer;
+
+}
+
+.question-box:hover {
+  background-color: #eee;
+  transition: all 0.3s ease;
+
+}
+
+.question-box h1 {
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px;
+  border: 1px dotted grey;
+
+}
+
+.question-box h1::after {
+
+  content: " + ";
+  float: right;
+
+}
+
+.question-box.close h1::after {
+  content: "_";
+}
+
+.answer-box {
+
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgb(223, 214, 214);
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.answer {
+  margin: 0;
+  padding: 10px;
+  font-size: larger;
+
+}
